@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --black: #000;
+    --verde: #00ff40;
+    --branco: #f4f4f4;
+    --cinza: #353836;
+}
+
+body{
+   background: var(--black);
+   font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    padding: 10px 100px;
+}
+
+header h1{
+   color: var(--verde);
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+}
+
+
+nav a{
+    padding: 20px;
+    color: var(--branco);
+    font-size: 17px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after{
+    content: " ";
+    width: 0;
+    height: 4px;
+    background: var(--verde);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+
+
+.menu-nav a:hover{
+    color: var(--verde);
+}
+
+.apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+
+.apresentacao img{
+    border-radius: 200px;
+    border: 4px solid var(--verde);
+    height: 150px;
+}
+
+.apresentacao h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #353836;
+    font-family: 'Poppins', sans-serif;
+}
+
+.autor{
+   color: var(--verde);
+   font-weight: bold;
+}
+    
+.apresentacao p{
+    color: var(--branco);
+    font-weight: 500px;
+    font-size: 20px;
+}
+
+.btn-apresentacao{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px 0px 0px 0px;
+}
+
+#ver-projeto{
+    cursor: default;
+    all: unset;
+    background: var(--verde);
+    color: var(--cinza);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+#ver-projeto:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+#contato-apresentacao{
+    all: unset;
+    cursor: pointer;
+    background: var(--verde);
+    color: var(--cinza);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+#contato-apresentacao:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+}
+
+.titulo-card{
+    color: var(--cinza);
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#span-projetos{
+   color: var(--verde);
+   font-weight: bold;
+}
+
+.secao-card{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    padding:20px;
+}
+
+.card{
+    margin: 10px;
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.05); 
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.card h1{
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.card p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: var(--cinza);
+}
+
+.etiquetas{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.badge{
+   display: flex;
+   padding: 6px 12px;
+   background-color: var(--branco);
+   color: var(--cinza);
+   border-radius: 20px;
+   font-weight: 500;
+   font-size: 12px;
+   margin: 20px 1px 0px 20px;
+}
+
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 30px;
+    padding: 0px 10px;
+    gap: 10px;
+    font-size: 14px;
+    margin: 50px 60px;
+    background: #fff;
+    border: 1px solid #bebfc2;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botao-link{
+    all: unset;
+}
+
+.botao-card:hover{
+    outline: 1px solid var(--black);
+    color: var(--cinza);
+    background: #f0f0f0;
+}
+
+
+.codigo-color:hover{
+    color: var(--cinza);
+}
+
+.sobre-mim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ;
+    padding: 0px 95px;
+    margin-bottom: 100px;
+}
+
+.sobre-mim p{
+    color: var(--branco);
+}
+
+.esquerda{
+    flex-direction: column;
+    font-size: 30px;
+}
+.esquerda p{
+     font-size: 20px;
+}
+
+#span-esquerda{
+    color: var(--cinza);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sobre-mim-span{
+    color: var(--verde);
+   font-weight: bold;
+}
+
+.direita{
+    padding-right: 100px;
+}
+
+.direita img{
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+.contato{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+#span-contato{
+    color: var(--verde);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.contato p{
+    font-size: 20px;  
+    color: var(--branco);  
+    margin-top: 10px;
+}
+
+.git-img i:hover{
+    transform: translateY(1px);
+}
+
+.linkedin-img i{
+    color: #0e76a8;
+}
+
+.linkedin-img i:hover{
+    transform: translateY(1px);
+}
+
+.email-img i{
+    color: #FF0000;
+}
+
+.email-img i:hover{
+    transform: translateY(1px);
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social a{
+    all: unset;
+}
+
+.botao-social{
+    width: 100px;
+    height: 30px;
+    justify-content: center;
+    background: var(--branco);
+}
+
+
+.botao-social:hover{
+    border: 2px solid var(--verde);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #f0f0f0;
+}
+
+
+.botao-social i{
+    font-size: 20px;
+}
+
+
+#linkedin{
+    color: #007BFF;
+}
+
+#instagram{
+    color: red
+}
+
+footer{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background: var(--black);
+    color: #fff;
+}
+
+#git-link{
+    text-decoration: none;
+    color: var(--verde);
+}
+
+#git-link:hover{
+    text-decoration: underline;
+    color: #8317c5;
+}
+
+@media (max-width: 1024px) {
+    header {
+        padding: 10px 30px;
+    }
+    .apresentacao h1 {
+        font-size: 36px;
+    }
+    .secao-card {
+        height: auto;
+        gap: 20px;
+    }
+    .card {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 10px;
+        gap: 10px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .apresentacao {
+        margin-top: 2rem;
+        gap: 8px;
+    }
+    .apresentacao h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .apresentacao p {
+        font-size: 16px;
+    }
+    .btn-apresentacao {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+    .titulo-card {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    .secao-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+    .card {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+      .card nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    #link-card {
+        display: inline-block;
+        margin: 0;
+        width: auto;
+        min-width: 60px;
+        text-align: center;
+    }
+    .card nav button {
+        margin: 0;
+    }
+
+     .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    .esquerda {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .esquerda p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #span-esquerda {
+        font-size: 28px;
+    }
+
+    .direita {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .direita img {
+        width: 120px;
+        border-radius: 60px;
+    }
+
+    .contato h1 {
+        font-size: 22px;
+    }
+    .contato p {
+        font-size: 15px;
+    }
+    .social {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 12px;
+        height: auto;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav a{
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .apresentacao img {
+        height: 100px;
+        border-width: 2px;
+    }
+    .apresentacao h1 {
+        font-size: 20px;
+    }
+    .btn-apresentacao a {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+    .titulo-card {
+        font-size: 20px;
+    }
+    #link-card a {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+    
+    }
+    .card h1 {
+        font-size: 16px;
+    }
+    .card p {
+        font-size: 12px;
+    }
+    .card {
+        max-width: 95vw;
+        padding: 5px;
+    }
+    .contato {
+        gap: 8px;
+        height: auto;
+    }
+    .contato h1 {
+        font-size: 16px;
+    }
+    .contato p {
+        font-size: 12px;
+    }
+    .social {
+        font-size: 18px;
+    }
+    footer {
+        font-size: 10px;
+        gap: 8px;
+    }
+}
